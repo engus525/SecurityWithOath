@@ -5,15 +5,15 @@ spring:
         registration:
 
           google:
-            client-id: 475240394642-1mmjebson7hrohs1qk8ra6al74u4hca7.apps.googleusercontent.com
-            client-secret: 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
+            client-id: { id }
+            client-secret: { secret key }
             scope:
               - profile
               - email
 
           naver:
-            client-id: VwVzinH32H5dl8KH6BHA
-            client-secret: 0KOQ53IR2U
+            client-id: { id }
+            client-secret: { secret key }
             scope:
               - name
               - email
@@ -22,8 +22,8 @@ spring:
             redirect-uri: http://localhost:8080/login/oauth2/code/naver
 
           kakao:
-            client-id: ce79230542287436a04acfb07efcf13c
-            client-secret: w83f3AkaHEvvE2Sd5TKy0YSTtudhXlvN
+            client-id: { id }
+            client-secret: { secret key }
             scope:
               - profile_nickname
               - account_email
@@ -47,9 +47,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/oauthLogin?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: { url }
     username: root
-    password: rlaengus525!
+    password: { password }
 
   jpa:
     hibernate:
